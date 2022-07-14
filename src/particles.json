@@ -66,18 +66,12 @@
       "value": 0.5
     },
     "shape": {
-      "type": "circle",
-      "src": "./assets/mm.svg",
-      "stroke": {
-        "width": 0,
-        "height": 0,
-        "color": "#ffffff"
-      }
-    },
-    "size": {
-      "random": true,
-      "value": 5
+      "type": "circle"
     }
+  },
+  "size": {
+    "random": true,
+    "value": 8
   },
   "detectRetina": true
 }

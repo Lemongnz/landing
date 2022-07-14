@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: fixed;
   top: 0;
-  left: ${({ clicked }) => (clicked ? "0" : "-100%")};
+  left: ${({ clicked }) => (clicked ? "0" : "-360px")};
   width: 360px;
   height: 100%;
   padding: 3rem;
@@ -12,10 +12,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   background-color: #1f434c;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   @media screen and (max-width: 768px) {
     width: 90%;
+    left: ${({ clicked }) => (clicked ? "0" : "-90%")};
   }
 `;
 

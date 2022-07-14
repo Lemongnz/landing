@@ -2,6 +2,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 .App {
@@ -17,4 +18,8 @@ a {
 h1,
 p {
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

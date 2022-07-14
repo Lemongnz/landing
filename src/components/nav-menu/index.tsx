@@ -2,10 +2,9 @@ import { Container, List, ListItem, NavClose } from "./style";
 import { RiCloseLine } from "react-icons/ri";
 
 export default function NavMenu({ clicked, handleClick }: any) {
-  console.log(clicked);
   return (
-    <Container>
-      <NavClose clicked={clicked} onClick={handleClick}>
+    <Container clicked={clicked}>
+      <NavClose onClick={handleClick}>
         <RiCloseLine />
       </NavClose>
       <List>

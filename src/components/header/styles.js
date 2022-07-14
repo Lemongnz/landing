@@ -6,4 +6,6 @@ export const CustomHeader = styled.header`
   justify-content: space-between;
   padding: 0 50px;
   height: 60px;
+  position: fixed;
+  width: 100%;
 `;
