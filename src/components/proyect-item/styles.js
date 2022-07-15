@@ -24,32 +24,20 @@ export const Title = styled.h3`
   margin: 0;
 `;
 export const Description = styled.p``;
-export const Source = styled.button`
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
+
+export const Source = styled.a`
   width: 35%;
-  height: 45px;
-  border-radius: 20px;
-  border: transparent;
-  background-color: red;
-  position: relative;
-  overflow: hidden;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  transition: 0.5s;
+  background-color: #1f434c;
+  align-items: center;
 
   :hover {
-    background-image: linear-gradient(
-      to right,
-      #02aab0 0%,
-      #00cdac 51%,
-      #02aab0 100%
-    );
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
   }
 `;
+
 export const Tech = styled.div`
   margin-bottom: 15px;
   font-size: 20px;

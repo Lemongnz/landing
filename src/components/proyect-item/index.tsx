@@ -6,10 +6,8 @@ export default function ProyectItem({ proyect }: any) {
       <img src={proyect.image} alt="proyect" />
       <Title>{proyect.title}</Title>
       <Description>{proyect.description}</Description>
-      <Source>
-        <a href={proyect.source} target="_blank" rel="noreferrer">
-          Source
-        </a>
+      <Source href={proyect.source} target="_blank" rel="noreferrer">
+        Source
       </Source>
       <Tech>
         {proyect.tech.map((tech: string) => {
