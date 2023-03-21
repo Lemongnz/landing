@@ -33,6 +33,9 @@ export const Source = styled.a`
   transition: 0.5s;
   background-color: #1f434c;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
   :hover {
   }

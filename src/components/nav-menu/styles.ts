@@ -1,7 +1,7 @@
 /* eslint-disable no-sequences */
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ clicked: boolean }>`
   position: fixed;
   top: 0;
   left: ${({ clicked }) => (clicked ? "0" : "-360px")};

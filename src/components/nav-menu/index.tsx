@@ -1,7 +1,12 @@
-import { Container, List, ListItem, NavClose } from "./style";
+import { Container, List, ListItem, NavClose } from "./styles";
 import { RiCloseLine } from "react-icons/ri";
 
-export default function NavMenu({ clicked, handleClick }: any) {
+type NavMenuI = {
+  clicked: boolean;
+  handleClick: () => void;
+};
+
+export default function NavMenu({ clicked, handleClick }: NavMenuI) {
   return (
     <Container clicked={clicked}>
       <NavClose onClick={handleClick}>

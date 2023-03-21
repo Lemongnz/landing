@@ -1,25 +1,10 @@
-import particlesOptions from "../../particles.json";
-import { ISourceOptions } from "tsparticles-engine";
-import Particles from "react-tsparticles";
-import { useCallback } from "react";
-import type { Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
-import "./particles.css";
 import { HomeData, HomeIcons } from "./styles";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Hello() {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadFull(engine);
-  }, []);
-
   return (
     <>
-      <Particles
-        options={particlesOptions as unknown as ISourceOptions}
-        init={particlesInit}
-      />
       <HomeData>
         <h1>Nazareno Gonzalez</h1>
         <p>Frontend Developer</p>

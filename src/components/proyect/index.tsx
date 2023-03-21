@@ -1,16 +1,16 @@
-import ProyectItem from "../proyect-item";
+import ProyectItem from "./proyect-item";
 import { Container } from "./styles";
 
 const proyects = [
   {
     id: 1,
-    title: "Proyecto 1",
+    title: "Instagram Clone",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+      'Clone de interfaz de instagram, se puede crear publicaciones y sumar "me gusta"',
     image:
       "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    source: "https://www.google.com",
-    tech: ["HTML", "CSS", "JS"],
+    source: "https://github.com/Lemongnz/instagram",
+    tech: ["React", "Styled - Components", "JS"],
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const proyects = [
   },
 ];
 
-export default function Proyect() {
+const Proyect = () => {
   return (
     <Container>
       {proyects.map((proyect) => (
@@ -42,4 +42,6 @@ export default function Proyect() {
       ))}
     </Container>
   );
-}
+};
+
+export default Proyect;
